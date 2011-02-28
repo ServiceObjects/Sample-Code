@@ -35,8 +35,7 @@
 <title>DOTS Address Geocode - US</title>
 </head>
 <body>
-                                    	<div>
-                                        <h4>DOTS Address Geocode - US Sample Form </h4>
+<h4>DOTS Address Geocode - US Sample Form </h4>
 <?php
 // (Optional) This turns off the WSDL caching, which is on by default.
 ini_set("soap.wsdl_cache_enabled","0");
