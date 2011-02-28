@@ -105,11 +105,8 @@ if(isset($_GET['Action']))
 		<td colspan="2"><br /><input type="image" src="images/submit-button.jpg" name="Action" value="Submit"></td>
 	</tr>
 </table>	
-
 </form>
-
 <?
-
 // Only make Soap request or show the results table if the form was submitted.
 if ($Action == "Submit") {
 	
@@ -187,14 +184,9 @@ if ($Action == "Submit") {
 				<?
 		}
 	?>
-	
 	</table>
-	
 	<?
-	
 }
 ?>
-</div><!--content_container closing tag-->
-           						  </div><!--content closing tag-->        
 </body>
 </html>
