@@ -33,112 +33,11 @@
 <html>
 <head>
 <title>DOTS Address Geocode - US</title>
-<link href="style.css" rel="stylesheet" type="text/css" />
 </head>
-<body id="page" class="yoopage font-medium width-wide">
-<div id="page-body">
-<div class="page-body-img">
-	<div class="page-body-b">
-    	<div class="wrapper floatholder">
-		<div id="header">
-				<div id="toolbar">
-					<div class="floatbox ie_fix_floats">
-							<div id="topmenu">
-							</div><!--top menu closing div-->
-					</div><!--floatbox ie_fix_floats closing div-->
-				</div><!--toolbar closing div-->
-                
-				<div id="headerbar">
-					<div class="floatbox ie_fix_floats">
-							<div class="module deepest blank">
-							</div><!--module deepest blank-->
-					</div><!--floatbox ie_fix_floats-->
-				</div><!--headerbar-->
-							
-				<div id="menubar">
-						<div class="menubar-l"></div>
-						<div class="menubar-r"></div>
-						<div class="menubar-m">
-                        	<div id="library_title"><h2>DOTS Address Geocode - US</h2></div>
-                            </div>
-				</div><!--menubar closing div-->
-						
-				<div id="menu">
-				
-				</div><!--menu closing div-->
-				<div id="logo" style="margin-top:-10px">
-					<p><img src="images/logo.jpg" width="206" height="64" /></p>
-				</div><!--logo closing div-->
-		</div><!--header closing div-->
-        
-              <div id="wrapper">
-                	<div class="wrapper-container-t">
-                    	<div class="wrapper-tl"></div>
-                        <div class="wrapper-tr"></div>
-                        <div class="wrapper-t"></div>
-                    </div>
-                    <div class="wrapper-b">
-                   	  <div class="wrapper-lt">
-                 			<div class="wrapper-r">
-                 				<div class="wrapper-bl">
-                                	<div class="wrapper-br">
-                						<div class="wrapper-container">
-                                         
-               <div id="middle">
-               		<div class="background">
-                    	<div id="left">
-                        	<div id="left_container" class="clearfix">
-                            	<div class="mod-default mod-menu">
-                                	<div class="module grey">
-                                    	<div class="module-2">
-                                        	<div class="module-3">
-                                            	<div class="module-4 deepest">
-                                                 <h3 class="module">
-                                                    	<span class="module-2">
-                                                        	<span class="module-3">
-                                                            	<span class="color">Web Services</span>
-                                                            </span>
-                                                        </span>
-                                                  </h3>
-                                                	<ul class="menu">
-                                                    	<li class="level1">
-                                                        	<a target="_blank" class="level1" href="http://www.serviceobjects.com/products/address/address-geocode-us">
-                                                            	<span>Product Info</span>
-                                                            </a> 
-                                                              
-                                                        </li><!--li level1 closing tag-->
-                                                        <li class="level1"><a target="_blank" class="level1 item1" href="http://www.serviceobjects.com/devguides/DOTS_Geocode_US.pdf">
-                                                            	<span>Developer Guide</span>
-                                                            </a> </li>
-                                                         <li class="level1 active"><a target="_blank" class="level1 item1" href="http://www.serviceobjects.com/dots-key?wsid=34">
-                                                            	<span>Free Trial</span>
-                                                            </a>  </li>
-                                                             <li class="level1"><a target="_blank" class="level1 item1" href="http://www.serviceobjects.com/support">
-                                                            	<span>Support</span>
-                                                            </a>  </li> 
-                                                  </ul><!--ul menu closing tag-->
-                                                </div><!--module-4 deepest-->
-                                            </div><!--module 3 closing tag-->
-                                        </div><!--module 2 closing tag-->
-                                    </div><!--module grey closing tag-->	
-                                </div><!--mod-default mod-menu closing tag-->
-                                <div align="center"><a target="_blank" href="http://www.serviceobjects.com/dots-key?wsid=34"><img border="0" src="images/get_trial.jpg" width="187" height="54"/></a></div>
-                        	</div><!--left container closing tag-->
-                        </div><!--left closing tag-->
-                        <div id="main">
-                        	<div id="main_container" class="clearfix">
-                            	<div id="mainmiddle" class="floatbox">
-                                	<div id="content">
-                                    	<div id="content_container"class="clearfix">
+<body>
+                                    	<div>
                                         <h4>DOTS Address Geocode - US Sample Form </h4>
 <?php
-// Original Author:  Cameron Michaelson ccmichaelson@hotmail.com
-// Modified By: Donnie Karns dkarns@serviceobjects.com
-// Date:   	4/19/2006
-// Notes:   This is an example PHP file that consumes the
-//		ServiceObjects DOTS GeoCode web service
-//		using the native PHP5 extension SoapClient class.
-
 // (Optional) This turns off the WSDL caching, which is on by default.
 ini_set("soap.wsdl_cache_enabled","0");
 
@@ -178,12 +77,8 @@ if(isset($_GET['LicenseKey']))
 // Variable to tell if the form was submitted
 if(isset($_GET['Action']))
 	$Action = $_GET["Action"];
-	
-
 ?>
-
 <form method="GET">
-
 <table>
 	<tr>
 		<td>Address: </td>
@@ -231,9 +126,7 @@ if ($Action == "Submit") {
 	$ResultNode = $SoapResponse->GetBestMatch_V3Result;
 
 	?>
-	
-	<table>
-	
+	<table>	
 	<?
 		if (!isset($ResultNode->Error)) //If there are no errors, display results
 		{
@@ -302,25 +195,6 @@ if ($Action == "Submit") {
 }
 ?>
 </div><!--content_container closing tag-->
-           						  </div><!--content closing tag-->
-           					  </div><!--mainmiddle closing tag-->
-               				</div><!--main_container closing tag-->
-               			  </div><!--main closing tag-->
-                		</div><!--background closing tag-->
-                	</div><!--middle closing tag-->
-                    <div id="footer">&copy;2010 Service Objects, Inc.  |  27 E.Cota St.  |  Santa Barbara, CA 93101  |  1.805.963.1700  |  toll free: 1.800.694.6269  |  fax: 1.805.963.9179</div>
-                					</div><!--wrapper-container closing tag-->
-                				</div><!--wrapper-br closing tag-->
-                			</div><!--wrapper-bl closing tag-->
-                			</div><!--wrapper-r closing tag-->
-               		  </div><!--wrapper-1 closing tag-->
-               	  </div><!--wrapper-b closing tag-->
-          </div><!--wrapper closing tag-->
-      </div><!--wrapper floatholder closing tag-->
-</div><!--page body b closing tag-->
-</div><!--page body-img closing tag-->
-</div><!--page-body closing tag-->
-               
-
+           						  </div><!--content closing tag-->        
 </body>
 </html>
